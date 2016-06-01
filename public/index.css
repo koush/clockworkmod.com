@@ -1,0 +1,27 @@
+.tiles article.style1 > .image:before {
+	background-color: #468fcc;
+}
+
+.tiles article.style2 > .image:before {
+	background-color: #c74b46;
+}
+
+.tiles article.style3 > .image:before {
+	background-color: #7bd0c1;
+}
+
+.tiles article.style4 > .image:before {
+	background-color: #FF911F;
+}
+
+.tiles article.style5 > .image:before {
+	background-color: #ae85ca;
+}
+
+.tiles article.style6 > .image:before {
+	background-color: #8499e7;
+}
+
+.tiles article > .image:after{
+  background-image: none;
+}
