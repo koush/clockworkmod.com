@@ -7,13 +7,13 @@
 <html>
 	<head>
 		<title>ClockworkMod</title>
+    <link rel="shortcut icon" href="/favicon.ico?v=2" />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" href="index.css" />
 	</head>
 	<body>
@@ -25,7 +25,7 @@
 						<div class="inner">
 
 							<!-- Logo -->
-								<a href="index.html" class="logo">
+								<a href="#" class="logo">
 									<span class="symbol"><i class="fa fa-gear fa-lg"></i> </span><span class="title">ClockworkMod</span>
 								</a>
 
@@ -90,10 +90,10 @@
 									<span class="image">
 										<img src="images/helium.png" alt="" />
 									</span>
-									<a href="https://play.google.com/store/apps/details?id=com.koushikdutta.backup&hl=en">
+									<a href="#" id='helium'>
 										<h2>Helium</h2>
 										<div class="content">
-											<p>Android's missing backup solution</p>
+											<p>Android's missing backup solution<h6>Android App</h6><h6>|</h6><h6 id='helium-desktop'>Desktop Installer</h6></p>
 										</div>
 									</a>
 								</article>
@@ -101,10 +101,10 @@
 									<span class="image">
 										<img src="images/tether.png" alt="" />
 									</span>
-									<a href="https://play.google.com/store/apps/details?id=com.koushikdutta.tether&hl=en">
+									<a href="#" id="tether">
 										<h2>Tether</h2>
 										<div class="content">
-											<p>Connect your PC to the internet through your Android</p>
+											<p>Connect your PC to the internet through your Android<h6>Android App</h6><h6>|</h6><h6 id='tether-desktop'>Desktop Installer</h6></p>
 										</div>
 									</a>
 								</article>
@@ -126,7 +126,7 @@
 									<a href="http://download.clockworkmod.com/test/UniversalAdbDriverSetup.msi">
 										<h2>Universal ADB Drivers</h2>
 										<div class="content">
-											<p>One size fits all drivers for Android</p>
+											<p>One size fits all Windows drivers for Android Debug Bridge</p>
 										</div>
 									</a>
 								</article>
@@ -160,6 +160,7 @@
 								<h2>Follow</h2>
 								<ul class="icons">
 									<li><a href="https://www.twitter.com/koush" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://plus.google.com/110558071969009568835/posts" class="icon style2 fa-google-plus"><span class="label">Twitter</span></a></li>
                   <!-- <li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
                   <li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
                   <li><a href="#" class="icon style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
@@ -183,6 +184,21 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
+      <script>
+      $('#helium-desktop').click(function(e) {
+        e.stopPropagation();
+        window.location = 'https://github.com/koush/support-wiki/wiki/Helium-Desktop-Installer-and-Android-App';
+      })
+      $('#helium').click(function(e) {
+        window.location = 'https://play.google.com/store/apps/details?id=com.koushikdutta.backup&hl=en';
+      })
+      $('#tether-desktop').click(function(e) {
+        e.stopPropagation();
+        window.location = 'https://github.com/koush/support-wiki/wiki/Tether-Desktop-Installer-and-Android-app';
+      })
+      $('#tether').click(function(e) {
+        window.location = 'https://play.google.com/store/apps/details?id=com.koushikdutta.tether&hl=en';
+      })
+      </script>
 	</body>
 </html>

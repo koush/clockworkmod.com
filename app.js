@@ -19,6 +19,25 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('/carbon', function(req, res) {
+  res.redirect('https://github.com/koush/support-wiki/wiki/Helium-Desktop-Installer-and-Android-App');
+});
+
+// legacy?
+app.get('/allcast/discover', function(req, res) {
+  res.redirect('https://play.google.com/store/apps/details?id=com.koushikdutta.cast');
+});
+
+app.get('/tether/drivers', function(req, res) {
+  res.redirect('https://github.com/koush/support-wiki/wiki/Android-ADB-Drivers');
+});
+
+app.get('/carbon/drivers', function(req, res) {
+  res.redirect('https://github.com/koush/support-wiki/wiki/Android-ADB-Drivers');
+});
+// end legacy?
+
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
@@ -49,7 +68,6 @@ app.use(function(err, req, res, next) {
         error: {}
     });
 });
-
 
 module.exports = app;
 
