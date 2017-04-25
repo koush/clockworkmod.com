@@ -22,6 +22,10 @@
 	background-color: #8499e7;
 }
 
+.tiles article.style7 > .image:before {
+	background-color: #b2bc47;
+}
+
 .tiles article > .image:after{
   background-image: none;
 }
