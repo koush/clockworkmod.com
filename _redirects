@@ -1,0 +1,5 @@
+# Redirects from what the browser requests to what we serve
+/carbon              https://github.com/koush/support-wiki/wiki/Helium-Desktop-Installer-and-Android-App
+/allcast/discover  https://play.google.com/store/apps/details?id=com.koushikdutta.cast
+/tether/drivers              https://github.com/koush/support-wiki/wiki/Android-ADB-Drivers
+/carbon/drivers            https://github.com/koush/support-wiki/wiki/Android-ADB-Drivers
